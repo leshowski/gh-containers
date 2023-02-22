@@ -6,7 +6,7 @@ on:
       - dev
 env:
   CACHE_KEY: node-deps
-  MONGODB_DB_NAME: asdf
+  MONGODB_DB_NAME: gha-demo
 jobs:
   test:
     environment: testing
@@ -15,7 +15,7 @@ jobs:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: cluster0.vpypzob.mongodb.net
       MONGODB_USERNAME: lponcecabello #${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: M3EzRl20Z8D1yu77 #${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_PASSWORD: h2QpwIiCawXyTssb #${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
